@@ -74,8 +74,7 @@ export default function Scoreboard() {
             </div>
           </div>
 
-          <div className="text-white text-center mt-auto w-1/3">
-            <p className="text-xl">VS</p>
+          <div className="text-white text-center mt-10  w-1/3">
             {stopwatchTime && parseInt(stopwatchTime) < 2700 ? (
               <p className="mt-5">First Half</p>
             ) : parseInt(stopwatchTime) >= 2700 &&

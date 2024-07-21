@@ -19,6 +19,7 @@ import axios from "axios";
 import SubtitutionPage from "../components/SubtitutionPage";
 import SubtitutionPageAway from "../components/SubtitutionPageAway";
 import Marquee from "react-fast-marquee";
+import BriLiga1 from "../assets/BRI-Liga-1-Indonesia.png";
 
 const Page = () => {
   const [showComponent1, setShowComponent1] = useState(false);
@@ -290,39 +291,16 @@ const Page = () => {
   return (
     <>
       <div className="flex h-screen">
-        {/* left side */}
-        {/* <div
-          style={{
-            width: "25%",
-            backgroundColor: getColor,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <div className="mb-auto mt-5">
-            <Image src={Berani} width={250} height={250} alt="Sponsor Logo" />
-          </div>
-          <div className="text-white">
-            <Timer />
-          </div>
-          <div className="mt-auto mb-5">
-            <Image src={Nat} width={250} height={250} alt="Sponsor 2 Logo" />
-          </div>
-        </div> */}
         {/* center side */}
         <div className="flex-1 bg-[#2C2C2C] flex flex-col items-center justify-center">
           <div className="flex">
             <div className="mt-3 text-4xl font-medium item-start">
-              {showPicture && showPicture[1] && showPicture[1].logo && (
-                <Image
-                  src={showPicture[1].logo}
-                  width={100}
-                  height={100}
-                  alt="Competition Logo"
-                />
-              )}
+              <Image
+                src={BriLiga1}
+                width={100}
+                height={100}
+                alt="Competition Logo"
+              />
             </div>
           </div>
 
@@ -341,6 +319,7 @@ const Page = () => {
             {showComponent11 && <Component11 />}
             {showComponent12 && <Component12 />}
           </div>
+          {/* sponsor */}
           <div className="mt-auto w-full border border-white overflow-hidden">
             <div className="px-4 py-2 bg-white">
               <Marquee>

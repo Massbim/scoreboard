@@ -9,7 +9,7 @@ const DropdownComponent = () => {
   useEffect(() => {
     // Fetch team dropdown options from the API
     axios
-      .get(`${process.env.NEXT_PUBLIC_DATABASE_URL}/team`)
+      .get(`${process.env.NEXT_PUBLIC_DATABASE_URL}/teamList`)
       .then((response) => {
         setTeamOptions(response.data);
       })

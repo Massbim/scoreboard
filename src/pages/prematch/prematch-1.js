@@ -1072,40 +1072,6 @@ const Prematch1 = () => {
                   )}
                 </div>
 
-                {/* OLD PLAYER */}
-                {/* <div className="mt-4 flex flex-col">
-                  <label htmlFor="playerName" className="font-semibold">
-                    Player Name
-                  </label>
-                  <div className="flex justify-between">
-                    <input
-                      name={`playerName`}
-                      placeholder="Player Name"
-                      type="text"
-                      className="rounded-md border-0 py-1.5 pl-2 text-black ring-1 ring-gray-300 placeholder:text-gray-400 mr-2 w-8/12"
-                    />
-                    <button className="bg-[#F3F3F3] hover:bg-neutral-300 text-black font-semibold py-2 px-4 rounded flex justify-center ">
-                      <Image
-                        src={Upload}
-                        width={20}
-                        height={20}
-                        className="mr-3"
-                      />
-                      Upload
-                    </button>
-
-                    <button className="bg-[#5786E3] hover:bg-blue-600 text-white font-semibold  py-2 px-4 border rounded flex justify-center">
-                      <Image
-                        src={Plus}
-                        width={20}
-                        height={20}
-                        className="mr-3"
-                      />
-                      Add Player
-                    </button>
-                  </div>
-                </div> */}
-
                 <div className="mt-5 ">{renderSelectedForm()}</div>
                 {selectedFormation && isFormVisible && (
                   <div className="mt-5 ml-5 flex justify-center">

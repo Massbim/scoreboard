@@ -531,6 +531,7 @@ const SideBar = () => {
         return <Prematch />;
     }
   };
+  console.log(teamHome);
 
   return (
     <>

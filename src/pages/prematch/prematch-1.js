@@ -85,7 +85,7 @@ const Prematch1 = () => {
     // Make an HTTP request to update the coach's name in the database
     axios
       .put(
-        `${process.env.NEXT_PUBLIC_DATABASE_URL}/coach/65aa203d672025c87a76f5d0`,
+        `${process.env.NEXT_PUBLIC_DATABASE_URL}/coach/6769134f5962f7dea97a4de3`,
         {
           name: newName,
         }
@@ -243,7 +243,7 @@ const Prematch1 = () => {
     try {
       // Perform database update
       await axios.put(
-        `${process.env.NEXT_PUBLIC_DATABASE_URL}/homeTeam/65a4c43b781814cf4206a691`,
+        `${process.env.NEXT_PUBLIC_DATABASE_URL}/homeTeam/676913915962f7dea97a4de6`,
         {
           formation: formation,
         }

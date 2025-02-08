@@ -50,7 +50,7 @@ const DropdownComponent = () => {
       // Update the /home endpoint with the new data
       axios
         .put(
-          `${process.env.NEXT_PUBLIC_DATABASE_URL}/awayTeam/65a4c43b781814cf4206a691`,
+          `${process.env.NEXT_PUBLIC_DATABASE_URL}/awayTeam/6769139f5962f7dea97a4dea`,
           updatedHomeData[0]
         )
         .then((response) => {

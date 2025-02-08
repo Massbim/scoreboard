@@ -142,7 +142,7 @@ const MyComponent = () => {
       try {
         // Send POST request with updated messagesHome array
         await axios.put(
-          `${process.env.NEXT_PUBLIC_DATABASE_URL}/score/65b3543eba1432d9d3e02d56`,
+          `${process.env.NEXT_PUBLIC_DATABASE_URL}/score/676913be5962f7dea97a4e34`,
           {
             messagesHome: messagesHome,
             minutesHome: minutesHome,

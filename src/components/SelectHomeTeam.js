@@ -48,7 +48,7 @@ const DropdownComponent = () => {
       try {
         // Update the home team data in the database
         await axios.put(
-          `${process.env.NEXT_PUBLIC_DATABASE_URL}/homeTeam/65a4c43b781814cf4206a691`,
+          `${process.env.NEXT_PUBLIC_DATABASE_URL}/homeTeam/676913915962f7dea97a4de6`,
           updatedHomeData
         );
         console.log("Home team data updated successfully");

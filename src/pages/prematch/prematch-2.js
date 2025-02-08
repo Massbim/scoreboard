@@ -80,7 +80,7 @@ const Prematch2 = () => {
     // Make an HTTP request to update the coach's name in the database
     axios
       .put(
-        `${process.env.NEXT_PUBLIC_DATABASE_URL}/coach/65aa2055672025c87a76f5d3`,
+        `${process.env.NEXT_PUBLIC_DATABASE_URL}/coach/67a6bc7019ab7900e607300d`,
         {
           name: newName,
         }
@@ -212,7 +212,7 @@ const Prematch2 = () => {
 
       // Make a POST request using Axios
       const response = await axios.post(
-        `${process.env.NEXT_PUBLIC_DATABASE_URL}/playerHome`,
+        `${process.env.NEXT_PUBLIC_DATABASE_URL}/playerAway`,
         formData
       );
 
@@ -220,12 +220,12 @@ const Prematch2 = () => {
 
       // Fetch the updated list of players
       const updatedResponse = await axios.get(
-        `${process.env.NEXT_PUBLIC_DATABASE_URL}/playerHome`
+        `${process.env.NEXT_PUBLIC_DATABASE_URL}/playerAway`
       );
       const updatedPlayers = updatedResponse.data;
 
       // Update state with the new list of players
-      setPlayerHome(updatedPlayers);
+      setPlayerAway(updatedPlayers);
     } catch (error) {
       console.error("Error creating player:", error);
     }
@@ -236,7 +236,7 @@ const Prematch2 = () => {
     try {
       // Perform database update
       await axios.put(
-        `${process.env.NEXT_PUBLIC_DATABASE_URL}/awayTeam/65a4cbb0a5c2cc43008bbe79`,
+        `${process.env.NEXT_PUBLIC_DATABASE_URL}/awayTeam/6769139f5962f7dea97a4dea`,
         {
           formation: formation,
         }
@@ -1596,7 +1596,12 @@ const Prematch2 = () => {
               <div className="border rounded-md p-4 ">
                 <div className="flex ">
                   <div className=" mr-2">
-                    <Image src={away.logo} width={100} height={100} />
+                    <Image
+                      src={away.logo}
+                      width={100}
+                      height={100}
+                      alt="away logo"
+                    />
                   </div>
                   {/* Text */}
                   <div className="flex flex-col justify-center ml-9">
